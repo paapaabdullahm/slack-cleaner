@@ -19,37 +19,37 @@ alias slack-cleaner='docker run --rm pam79/slack-cleaner'
 >After the task, a backup file `slack-cleaner.<timestamp>.log` will be created in current directory if `--log` is supplied.
 
 
-#### Delete all messages from a channel
+Delete all messages from a channel
     slack-cleaner --token <TOKEN> --message --channel general --user "*"
 
-#### Delete all messages from a private group
+Delete all messages from a private group
     slack-cleaner --token <TOKEN> --message --group hr --user "*"
 
-#### Delete all messages from a direct message channel
+Delete all messages from a direct message channel
     slack-cleaner --token <TOKEN> --message --direct sherry --user johndoe
 
-#### Delete all messages from a multiparty direct message channel. Note that the list of usernames must contain yourself
-    slack-cleaner --token <TOKEN> --message --mpdirect sherry,james,johndoe --user "*" 
+Delete all messages from a multiparty direct message channel. Note that the list of usernames must contain yourself
+    slack-cleaner --token <TOKEN> --message --mpdirect sherry,james,johndoe --user "*"
 
-#### Delete all messages from certain user
+Delete all messages from certain user
     slack-cleaner --token <TOKEN> --message --channel gossip --user johndoe
 
-#### Delete all messages from bots (especially flooding CI updates)
+Delete all messages from bots (especially flooding CI updates)
     slack-cleaner --token <TOKEN> --message --channel auto-build --bot
 
-#### Delete all messages older than 2015/09/19
+Delete all messages older than 2015/09/19
     slack-cleaner --token <TOKEN> --message --channel general --user "*" --before 20150919
 
-#### Delete all files
+Delete all files
     slack-cleaner --token <TOKEN> --file --user "*"
 
-#### Delete all files from certain user
+Delete all files from certain user
     slack-cleaner --token <TOKEN> --file --user johndoe
 
-#### Delete all snippets and images
+Delete all snippets and images
     slack-cleaner --token <TOKEN> --file --types snippets,images
 
-#### Always have a look at help message
+Always have a look at help message
     slack-cleaner --help
 
 ### Gotchas
