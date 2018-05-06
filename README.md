@@ -69,9 +69,7 @@ slack-cleaner --token <TOKEN> --file --types snippets,images
 ```
 
 Always have a look at help message
-```shell
-slack-cleaner --help
-```
+    slack-cleaner --help
 
 ### Gotchas
 
