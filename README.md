@@ -20,7 +20,9 @@ alias slack-cleaner='docker run --rm pam79/slack-cleaner'
 
 
 Delete all messages from a channel
-    slack-cleaner --token <TOKEN> --message --channel general --user "*"
+```shell
+slack-cleaner --token <TOKEN> --message --channel general --user "*"
+```
 
 Delete all messages from a private group
     slack-cleaner --token <TOKEN> --message --group hr --user "*"
